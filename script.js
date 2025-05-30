@@ -1,17 +1,21 @@
-<script>
-  const toggleButton = document.getElementById('darkModeToggle');
-  const body = document.body;
+const toggleButton = document.getElementById('darkModeToggle');
+const body = document.body;
 
-  toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-
-    if (body.classList.contains('dark-mode')) {
-      toggleButton.textContent = '☀️'; // Sun icon for dark mode active
-    } else {
-      toggleButton.textContent = '🌙'; // Moon icon for light mode active
-    }
-  });
-
-  // Set initial icon
+// Set initial icon and mode based on system preference
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  body.classList.add('dark-mode');
+  toggleButton.textContent = '☀️';
+} else {
   toggleButton.textContent = '🌙';
-</script>
+}
+
+// Toggle dark mode on button click
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+
+  if (body.classList.contains('dark-mode')) {
+    toggleButton.textContent = '☀️';
+  } else {
+    toggleButton.textContent = '🌙';
+  }
+});
