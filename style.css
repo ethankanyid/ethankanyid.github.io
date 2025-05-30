@@ -42,6 +42,10 @@ header {
   text-decoration: underline;
 }
 
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
 .hero-text {
   text-align: center;
   padding: 2rem;
@@ -73,52 +77,6 @@ ul {
   padding-left: 1.5rem;
 }
 
-.tech-list, .tools-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.5rem;
-}
-
-.highlight {
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #004466;
-  color: white;
-  margin-top: 3rem;
-}
-
-a {
-  color: #004466;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* Existing CSS remains above */
-
-.nav-links a.active {
-  border-bottom: 2px solid white;
-}
-
-main.resume {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
 .resume section {
   margin-bottom: 2rem;
 }
@@ -133,7 +91,6 @@ main.resume {
   list-style-type: disc;
   padding-left: 1.5rem;
 }
-
 
 /* Fade-in reveal animation for ScrollReveal */
 .reveal {
@@ -178,3 +135,9 @@ main.resume {
   background: #f5f7fa; /* fallback background */
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
