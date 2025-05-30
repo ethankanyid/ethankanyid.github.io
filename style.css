@@ -3,15 +3,15 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fbf9f4; /* Light warm background */
-  color: #4a433f;       /* Warm brown/gray text */
+  background: rgb(240, 242, 189); /* pale yellow */
+  color: rgb(75, 53, 42); /* rich brown */
   line-height: 1.6;
 }
 
-/* ====== HEADER STYLES ====== */
+/* ====== HEADER ====== */
 header {
-  background: #3b5a6f; /* Warm blue */
-  color: #fbf9f4;
+  background: rgb(75, 53, 42); /* dark brown */
+  color: rgb(240, 242, 189); /* pale yellow text */
 }
 
 .navbar {
@@ -19,7 +19,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #2e4a58; /* Darker warm blue */
 }
 
 .logo {
@@ -36,19 +35,19 @@ header {
 }
 
 .nav-links li a {
-  color: #fbf9f4;
+  color: rgb(240, 242, 189);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #d4af37; /* Warm yellow on hover */
+  color: rgb(202, 120, 66); /* warm orange on hover */
   text-decoration: underline;
 }
 
 .nav-links a.active {
-  border-bottom: 2px solid #d4af37; /* Highlight active page */
+  border-bottom: 2px solid rgb(202, 120, 66); /* orange underline */
 }
 
 /* ====== HERO TEXT ====== */
@@ -60,28 +59,26 @@ header {
 .hero-text h1 {
   margin: 0;
   font-size: 2.5rem;
-  color: #6b8e23; /* Warm green */
+  color: rgb(178, 205, 156); /* soft green */
 }
 
-/* ====== MAIN CONTAINER ====== */
+/* ====== MAIN CONTENT ====== */
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
-  background: #fff8f0;
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(166, 124, 82, 0.15);
+  box-shadow: 0 4px 12px rgba(75, 53, 42, 0.15); /* subtle brown shadow */
 }
 
-/* ====== SECTION SPACING ====== */
 section {
   margin-bottom: 2rem;
 }
 
-/* ====== SECTION HEADINGS ====== */
 h2 {
-  color: #6b8e23; /* Warm green */
-  border-bottom: 2px solid #a67c52; /* Soft brown underline */
+  color: rgb(178, 205, 156); /* soft green */
+  border-bottom: 2px solid rgb(202, 120, 66); /* orange accent line */
   padding-bottom: 0.3rem;
 }
 
@@ -91,33 +88,16 @@ ul {
   padding-left: 1.5rem;
 }
 
-/* ====== RESUME PAGE STYLES (if used) ====== */
-.resume section {
-  margin-bottom: 2rem;
-}
-
-.resume h2 {
-  color: #6b8e23;
-  border-bottom: 1px solid #a67c52;
-  padding-bottom: 0.2rem;
-}
-
-.resume ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-/* ====== PROFILE PHOTO STYLING ====== */
+/* ====== ABOUT SECTION ====== */
 .profile-photo {
   width: 100%;
   max-width: 300px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(166, 124, 82, 0.3);
+  box-shadow: 0 4px 8px rgba(75, 53, 42, 0.3);
   margin: 0 auto;
 }
 
-/* ====== ABOUT SECTION FLEX LAYOUT ====== */
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +110,7 @@ ul {
   min-width: 250px;
 }
 
-/* ====== RESPONSIVE STYLES ====== */
+/* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -144,57 +124,5 @@ ul {
 
   .profile-photo {
     margin-bottom: 1rem;
-  }
-}
-
-/* ====== DARK MODE (auto-detected) ====== */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #1e1e1c;
-    color: #ddd8cc;
-  }
-
-  header {
-    background: #2e3d40; /* Dark muted blue/gray */
-    color: #ddd8cc;
-  }
-
-  .navbar {
-    background-color: #253335;
-  }
-
-  .nav-links li a {
-    color: #ddd8cc;
-  }
-
-  .nav-links li a:hover {
-    color: #d4af37;
-  }
-
-  .nav-links a.active {
-    border-bottom: 2px solid #d4af37;
-  }
-
-  .hero-text h1 {
-    color: #8baa43; /* Muted warm green */
-  }
-
-  main {
-    background: #2c2b27;
-    box-shadow: 0 4px 12px rgba(166, 124, 82, 0.5);
-  }
-
-  h2 {
-    color: #8baa43;
-    border-bottom: 2px solid #a67c52;
-  }
-
-  .resume h2 {
-    color: #8baa43;
-    border-bottom: 1px solid #a67c52;
-  }
-
-  .profile-photo {
-    box-shadow: 0 4px 8px rgba(166, 124, 82, 0.7);
   }
 }
