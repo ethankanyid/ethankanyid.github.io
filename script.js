@@ -50,3 +50,8 @@ window.addEventListener('scroll', () => {
     backToTop.style.display = 'none';
   }
 });
+
+// Optional sayHi function for the button on the homepage
+function sayHi() {
+  alert("Hey there! Thanks for visiting my site 😊");
+}
