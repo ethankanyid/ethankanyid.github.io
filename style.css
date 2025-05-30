@@ -141,3 +141,14 @@ ul {
     align-items: flex-start;
   }
 }
+
+.profile-photo {
+  width: 100%;
+  max-width: 400px; /* or any width that fits nicely */
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* center horizontally and some vertical spacing */
+  border-radius: 8px; /* optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: subtle shadow */
+}
+
