@@ -4,9 +4,8 @@ made with the help of chat gpt.
 
 todo
 - change color scheme
-- unprivatize classwork folder
-- grammar
-- javascript?
-- update resume
-- make it cohesive
+
+-javascript?
 - dark mode
+- unprivatize classwork folder
+- readme
