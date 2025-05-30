@@ -106,3 +106,31 @@ a:hover {
     align-items: flex-start;
   }
 }
+
+/* Existing CSS remains above */
+
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+main.resume {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.resume section {
+  margin-bottom: 2rem;
+}
+
+.resume h2 {
+  color: #004466;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2rem;
+}
+
+.resume ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
