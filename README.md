@@ -9,3 +9,4 @@ todo
 - javascript?
 - update resume
 - make it cohesive
+- dark mode
