@@ -2,14 +2,14 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f7fa;
-  color: #333;
+  background: #fbf9f4;
+  color: #4a433f;
   line-height: 1.6;
 }
 
 header {
-  background: #004466;
-  color: white;
+  background: #3b5a6f; /* warm blue */
+  color: #fbf9f4;
 }
 
 .navbar {
@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #003344;
+  background-color: #2e4a58; /* darker warm blue */
 }
 
 .logo {
@@ -33,17 +33,19 @@ header {
 }
 
 .nav-links li a {
-  color: white;
+  color: #fbf9f4;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
+  color: #d4af37; /* warm yellow */
   text-decoration: underline;
 }
 
 .nav-links a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #d4af37;
 }
 
 .hero-text {
@@ -54,12 +56,16 @@ header {
 .hero-text h1 {
   margin: 0;
   font-size: 2.5rem;
+  color: #6b8e23; /* warm green */
 }
 
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
+  background: #fff8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(166, 124, 82, 0.15);
 }
 
 section {
@@ -67,8 +73,8 @@ section {
 }
 
 h2 {
-  color: #004466;
-  border-bottom: 2px solid #ccc;
+  color: #6b8e23; /* warm green */
+  border-bottom: 2px solid #a67c52; /* soft brown */
   padding-bottom: 0.3rem;
 }
 
@@ -82,8 +88,8 @@ ul {
 }
 
 .resume h2 {
-  color: #004466;
-  border-bottom: 1px solid #ccc;
+  color: #6b8e23;
+  border-bottom: 1px solid #a67c52;
   padding-bottom: 0.2rem;
 }
 
@@ -97,7 +103,7 @@ ul {
   max-width: 300px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(166, 124, 82, 0.3);
   margin: 0 auto;
 }
 
@@ -125,5 +131,57 @@ ul {
   }
   .profile-photo {
     margin-bottom: 1rem;
+  }
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1e1e1c;
+    color: #ddd8cc;
+  }
+
+  header {
+    background: #2e3d40; /* dark muted blue/gray */
+    color: #ddd8cc;
+  }
+
+  .navbar {
+    background-color: #253335;
+  }
+
+  .nav-links li a {
+    color: #ddd8cc;
+  }
+
+  .nav-links li a:hover {
+    color: #d4af37;
+  }
+
+  .nav-links a.active {
+    border-bottom: 2px solid #d4af37;
+  }
+
+  .hero-text h1 {
+    color: #8baa43; /* muted warm green */
+  }
+
+  main {
+    background: #2c2b27;
+    box-shadow: 0 4px 12px rgba(166, 124, 82, 0.5);
+  }
+
+  h2 {
+    color: #8baa43;
+    border-bottom: 2px solid #a67c52;
+  }
+
+  .resume h2 {
+    color: #8baa43;
+    border-bottom: 1px solid #a67c52;
+  }
+
+  .profile-photo {
+    box-shadow: 0 4px 8px rgba(166, 124, 82, 0.7);
   }
 }
