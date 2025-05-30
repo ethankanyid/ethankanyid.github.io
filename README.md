@@ -1,11 +1,11 @@
-# ethankanyid.github.io
+# Ethan Kanyid Website
 
-made with the help of chat gpt.
+This is my personal website summarizing my background, skills, experience, projects, and education.
 
-todo
-- change color scheme
+Made with the help of ChatGPT.
 
--javascript?
-- dark mode
-- unprivatize classwork folder
-- readme
+## To Do
+
+- Add JavaScript features:
+  - Dark mode  
+  - Unprivatize classwork folder  
