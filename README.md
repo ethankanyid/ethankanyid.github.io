@@ -10,3 +10,7 @@ Made with the help of ChatGPT.
 - capstone project WSU
 - app?
 - favicon
+- move download buttons to top
+- collapsable sections?
+- show that links take you off site
+- more interactions
