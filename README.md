@@ -14,3 +14,5 @@ Made with the help of ChatGPT.
 - collapsable sections?
 - show that links take you off site
 - more interactions
+
+- sticky header
